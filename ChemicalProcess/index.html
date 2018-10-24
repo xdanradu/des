@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="topcoat.css">
+  <script src="jQuery.js"></script>
+</head>
+
+<body>
+
+  <div id="mainContent">
+    <h1>DES/Chemical process</h1>
+
+    <fieldset class="configuration">
+      <legend>
+        Control Panel
+      </legend>
+      <label>Refresh (5-30 ms)</label>
+      <input id="refreshRange" type="range" class="topcoat-range" min=5 max=30>
+      <span id="refreshValue"></span>
+      <br>
+      <br>
+      <input id="startBtn" class="topcoat-button--cta" type="button" value="Start">
+    </fieldset>
+    <div id="in1" class="circle paintRed">1</div>
+    <div id="in2" class="circle paintRed">2</div>
+    <div id="tankContainer">
+      <div id="tank"></div>
+    </div>
+    <div id="out" class="circle paintRed">3</div>
+    <br>
+    <span class="topcoat-notification" id="txt">Waiting to start</span>
+  </div>
+
+  <script src="tank.js"></script>
+  <script src="refresh.js"></script>
+  <script src="event-handling.js"></script>
+  <script src="periodic-tasks.js"></script>
+  <script src="ui.js"></script>
+
+</body>
+
+</html>
