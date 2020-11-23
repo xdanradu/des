@@ -3,17 +3,23 @@ body {
 }
 
 .link {
-    stroke: #000;
-    stroke-width: 1.5px;
+    stroke: #333;
+    stroke-width: 1;
 }
 
 .node {
     cursor: move;
-    fill: #ccc;
+    fill: #fff;
     stroke: #000;
-    stroke-width: 1.5px;
+    stroke-width: 1;
+}
+
+.node:hover {
+    fill: #ccffcc;
+    stroke: darkgreen;
+    stroke-width: 3;
 }
 
 .node.fixed {
-    fill: #7777ff;
+    fill: #ccffcc;
 }

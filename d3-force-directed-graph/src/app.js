@@ -82,23 +82,5 @@ function generate() {
         return x < lo ? lo : x > hi ? hi : x;
     }
 }
-/*
-let svg = d3.select('.diagram')
-    .append('svg')
-    .attr('height', '500px')
-    .attr('width','500px');
 
-var lineFunction = d3.svg.line()
-    .x(function(d) { return d.x; })
-    .y(function(d) { return d.y; })
-    .interpolate("linear");
-
-var lineData = [ { "x": 1,   "y": 50},  { "x": 120,  "y": 50}, { "x": 120,  "y": 150} ];
-svg.append("path")
-                            .attr("d", lineFunction(lineData))
-                            .attr("stroke", "#7777ff")
-                            .attr("stroke-width", 15)
-                            .attr("fill", "none");
-
-*/
 generate();
