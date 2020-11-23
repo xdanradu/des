@@ -1,0 +1,14 @@
+{
+  "name": "d3-force-directed-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/init.js",
+  "scripts": {
+    "start": "npx live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

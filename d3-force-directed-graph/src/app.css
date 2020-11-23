@@ -1,0 +1,19 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.link {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node {
+    cursor: move;
+    fill: #ccc;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node.fixed {
+    fill: #7777ff;
+}

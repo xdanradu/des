@@ -1,0 +1,57 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    padding:10px;
+}
+
+.canvas {
+    margin-top:10px;
+    border:1px solid #dedede;
+}
+
+button {
+    padding: 5px 10px;
+    margin:5px;
+    background: #3333aa;
+    color: white;
+    border: 1px solid #7777ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #7777ff;
+    transition: .5s ease-in-out;
+}
+
+#circle {
+    transition: .5s ease-in-out;
+}
+
+#circle:hover{
+    cursor: pointer;
+}
+
+.icon:hover{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.node:hover{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.node-text:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    cursor: pointer;
+    stroke: #3333aa;
+    stroke-width: 5;
+}
