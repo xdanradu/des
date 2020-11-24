@@ -39,6 +39,10 @@ button:hover {
     font-size: 40px;
 }
 
+.icon {
+    transition: .3s ease-out;
+}
+
 .node:hover{
     font-weight: bold;
     cursor: pointer;
