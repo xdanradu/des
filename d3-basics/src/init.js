@@ -1,6 +1,7 @@
 let width = 285;
 let height = 250;
-const svg = d3.select('.diagram').append("svg")
+const svg = d3.select('.diagram')
+    .append("svg")
     .classed('canvas', true)
     .attr("width", width)
     .attr('height', height);
