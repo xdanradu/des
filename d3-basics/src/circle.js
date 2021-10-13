@@ -10,11 +10,14 @@ svg.append('circle')
 
 function inc(){
     if(r<=50) r+=10;
-    d3.select('#circle').attr('r', r).attr('fill', getRandomColor());;
+    changeCircle(r);
 }
 
 function dec(){
     if(r>=10) r-=10;
-    d3.select('#circle').attr('r', r).attr('fill', getRandomColor());;
+    changeCircle(r);
 }
 
+function changeCircle(r) {
+    d3.select('#circle').attr('r', r).attr('fill', getRandomColor());
+}

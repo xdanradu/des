@@ -1,0 +1,34 @@
+body {
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin-bottom:7px;
+}
+
+.container {
+    width:200px;
+    height: 20px;
+    border: 1px solid #dedede;
+    margin-bottom:10px;
+}
+
+.progress {
+    color: #fff;
+    background-color: #4CAF50;
+    text-align: center;
+    font-size: 14px;
+}
+
+.start {
+    background-color: #4CAF50;
+    color: #fff;
+    padding:10px;
+    border: 0px;
+}
+
+.start:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
