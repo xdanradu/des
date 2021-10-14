@@ -19,7 +19,7 @@ class Tank {
     }
 
     fill() {
-        this.in =  setInterval(() => {
+        this.in = setInterval(() => {
             if (this.level >= this.volume) {
                 this.full$.next(true);
             } else {
