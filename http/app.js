@@ -15,13 +15,35 @@ console.log('Do something else 1');
 /* asynchronous http request */
 function httpGetAsync(theUrl) {
     let xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            console.log(xmlHttp.responseText);
+    xmlHttp.onreadystatechange = () => {
+        switch(xmlHttp.readyState) {
+            case 1: {
+                console.log('http OPENED');
+                break;
+            }
+            case 2: {
+                console.log('http HEADERS_RECEIVED');
+                break;
+            }
+            case 3: {
+                console.log('http LOADING');
+                break;
+            }
+            case 4: {
+                console.log('http DONE');
+                if (xmlHttp.status === 200){
+                    console.log(xmlHttp.responseText);
+                }
+                break;
+            }
+            default: {
+                console.log('unexpected');
+            }
+        }
     }
     xmlHttp.open("GET", theUrl, true); // true for asynchronous
     xmlHttp.send(null);
 }
 
-httpGetAsync('URL');
+httpGetAsync(URL);
 console.log('Do something else 2');
