@@ -5,7 +5,6 @@ function httpGet(theUrl) {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
-    console.log(xmlHttp.responseText);
     return xmlHttp.responseText;
 }
 
@@ -45,5 +44,5 @@ function httpGetAsync(theUrl) {
     xmlHttp.send(null);
 }
 
-httpGetAsync(URL);
+console.log(httpGetAsync(URL));
 console.log('Do something else 2');
