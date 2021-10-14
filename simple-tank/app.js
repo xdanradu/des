@@ -76,10 +76,6 @@ tank.empty$.subscribe(() => {
     tank.closeOut();
 });
 
-
-
 function start(){
     tank.fill();
 }
-
-
