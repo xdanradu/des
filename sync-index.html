@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<script>
+let sync = false;
+document.addEventListener('e1', ()=>{
+  syncIt('e1', 'e2');
+})
+
+document.addEventListener('e2', ()=>{
+  syncIt('e2', 'e1');
+})
+
+function syncIt(ev1, ev2) {
+  if(sync==true) { 
+    console.log(`Sync, ${ev1} after ${ev2}`); 
+    sync = false;
+  }
+  else sync = true;
+}
+
+setTimeout(()=>
+    document.dispatchEvent(new CustomEvent('e1')),
+    100
+)
+
+    setTimeout(()=>
+    document.dispatchEvent(new CustomEvent('e2')),
+    5000
+)
+
+</script>
+</body>
+</html>
